@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DroneFlyHigh.Site" %>
+
+<!DOCTYPE.html>
+
+<html>
+
+<head runat="server">
+    <title><!-- Contained the primary title element for the page-->
+    <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    
+    <link href="~/css/Styles.css" rel="stylesheet" type="text/css" runat="server">
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="page">
+        <div id="header">
+                <h1><!-- Contained the primary title element for the page-->
+                <asp:ContentPlaceHolder ID="h1" runat="server">
+                </asp:ContentPlaceHolder>
+                </h1>
+                
+
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="~/default.aspx" runat="server">Home</a></li>
+                    <li><a href="~/about.aspx" runat="server">About</a></li>
+                    <li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
+                    <li><a href="~/members/default.aspx" runat="server">Members</a></li>
+
+                </ul>
+            </div>
+
+            <div id="content">
+                <h2><!-- Contained the primary title element for the page-->
+                <asp:ContentPlaceHolder ID="h2" runat="server">
+                </asp:ContentPlaceHolder>
+                </h2>
+
+                <!-- Contained the primary title element for the page-->
+
+                <asp:ContentPlaceHolder ID="pagecontent" runat="server">
+                </asp:ContentPlaceHolder>
+
+                
+
+            </div>
+        </div>
+     </form>
+</body>
+
+</html>

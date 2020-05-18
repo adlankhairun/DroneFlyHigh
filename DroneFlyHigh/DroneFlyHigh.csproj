@@ -112,6 +112,7 @@
     <Content Include="admin\Edit.aspx" />
     <Content Include="admin\UploadImage.aspx" />
     <Content Include="contact.aspx" />
+    <Content Include="css\style.css" />
     <Content Include="css\Styles.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />

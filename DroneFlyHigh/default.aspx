@@ -4,10 +4,7 @@
 Drone Fly High
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="h1" runat="server">
-    Drone Fly High
-     
-   
-                    <a href="~/default.aspx" runat="server">Home</a>
+    <a href="~/default.aspx" runat="server">Home</a>
                     <a href="~/about.aspx" runat="server">About</a>
                     <a href="~/contact.aspx" runat="server">Contact Us</a>
                     <a href="~/Products.aspx" runat="server">Products</a>
@@ -15,7 +12,7 @@ Drone Fly High
                     <a href="~/Login.aspx" runat="server">Login</a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="h2" runat="server">
-    Drone Products
+    Drone Products Drone Fly High
 </asp:Content>
 
 
@@ -42,6 +39,17 @@ Drone Fly High
     
 
     <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT * FROM [tblPhoneDir]"></asp:SqlDataSource>
+
+    
+
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource">
+        <Columns>
+            <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
+            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+            <asp:BoundField DataField="Number" HeaderText="Number" SortExpression="Number" />
+            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+        </Columns>
+    </asp:GridView>
 
     
 

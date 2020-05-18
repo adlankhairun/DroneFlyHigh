@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="DroneFlyHigh.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
+    Contact
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="h1" runat="server">
+    CONTACT
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="h2" runat="server">
 </asp:Content>
@@ -12,10 +14,10 @@
 We are at:
 </p>
 <p>
-1 The street <br />
-Townsville<br / >
-Cheshire<br>
-CH1 1AA
+Bandar Seri Begawan <br />
+Meragang Street 23<br / >
+New Zone<br>
+BU 2324 
 </p>
 
 <h2>Contact Us Form</h2>
@@ -66,5 +68,16 @@ CH1 1AA
             <asp:Literal ID="litResult" runat="server"></asp:Literal>
         </div>
     </asp:panel>
+
+    <div id='printoutPanel'></div>
+        
+        <div id='myMap' style='width: 100vw; height: 100vh;'></div>
+        <script type='text/javascript'>
+            function loadMapScenario() {
+                var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {});
+                
+            }
+        </script>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=As6BgKQ2MXjtHys5-PERtp5rFDxq2d1BabZW2LyquOa0VK5MiZOZKAuo2Fwb8g1j&callback=loadMapScenario' async defer></script>
 
 </asp:Content>

@@ -5,18 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace DroneFlyHigh
+namespace DroneFlyHigh.admin
 {
     public partial class _default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void rptrDrone_ItemCommand(object source, RepeaterCommandEventArgs e)
-        {
-           
         }
     }
 }

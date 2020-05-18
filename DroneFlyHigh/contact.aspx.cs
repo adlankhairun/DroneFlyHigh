@@ -31,9 +31,9 @@ namespace DroneFlyHigh
             smtpClient.EnableSsl = true;
 
             //create credentials - e.g. username and password for the account
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("CO5027demo@gmail.com", "P@55word");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("adlan926@gmail.com", "khairunadlan9");
             smtpClient.Credentials = credentials;
-            msg = new MailMessage("CO5027demo@gmail.com", "adlan926@gmail.com");
+            msg = new MailMessage("adlan926@gmail.com", "adlan926@gmail.com");
 
 
             try
